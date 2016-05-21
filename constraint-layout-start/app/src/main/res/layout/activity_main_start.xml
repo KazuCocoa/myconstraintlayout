@@ -1,7 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:id="@+id/constraintLayout">
+
+    <ImageView
+        android:src="@drawable/singapore"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/dummy"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        tools:layout_constraintRight_creator="0" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="237dp"
+        android:id="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="@+id/constraintLayout"
+        android:layout_marginStart="36dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        android:layout_marginTop="37dp"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="230dp"
+        android:id="@+id/editText"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginStart="48dp"
+        tools:layout_constraintLeft_creator="0"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        tools:layout_constraintTop_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/textView4"
+        tools:layout_constraintBottom_creator="0"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <Button
+        android:text="@string/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:id="@+id/button3"
+        app:layout_constraintRight_toRightOf="@+id/constraintLayout"
+        android:layout_marginEnd="24dp"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0" />
+
+    <Button
+        android:text="@string/discard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="447dp"
+        android:id="@+id/button4"
+        app:layout_constraintRight_toLeftOf="@+id/button3"
+        android:layout_marginEnd="32dp"
+        tools:layout_constraintRight_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+        android:layout_marginBottom="16dp"
+        tools:layout_constraintBottom_creator="0" />
 
 </android.support.constraint.ConstraintLayout>
